@@ -1,3 +1,51 @@
+header {
+  text-align: center;
+  padding: 20px;
+  font-size: 40px;
+  font-weight: bold;
+  background-color: #1a1a2e;
+  border-bottom: 3px solid #f99e1a;
+}
+
+nav#menu {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  border-color: #f9f9f9;
+  background-color: #12122a;
+  padding: 10px;
+}
+
+nav#menu a {
+  color: #af1e16;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 6px 14px;
+  border: 1px solid #555;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+nav#charselect {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background-color: #1818ad;
+  padding: 10px;
+}
+
+nav#charselect button{
+  border: 3px solid #19297b;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+nav#charselect button:hover{
+  border: 3px solid #f2fa05;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
 table, th, td {
   border:1px solid rgb(102, 84, 10);
   color: rgb(9, 28, 107);
@@ -10,11 +58,46 @@ section {
   text-align: center;
 }
 
+#parts {
+    background-color: rgb(253, 240, 213);
+  border-bottom: 3px solid #7e1af9;
+}
+
 h1 {
+  color: rgb(27, 19, 19);
+  background-color: rgb(253, 240, 213);
+  text-align: center;
+}
+
+h2 {
   color: rgb(193, 18, 31);
   background-color: rgb(253, 240, 213);
   text-align: center;
 }
+
+a#animation {
+  color: #af1e16;
+  background-color:rgb(253, 240, 213) ;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 6px 14px;
+  border: 1px solid #555;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+a#animation:hover {
+  color: rgb(253, 240, 213);
+  background-color:rgb(255, 0, 0) ;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 6px 14px;
+  border: 1px solid #555;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+
 
 #top {
   color:rgb(193, 18, 31);
@@ -80,8 +163,27 @@ p {
 
 #RyuMini {
   text-align: center;
+  padding-bottom: 20%;
+  padding-top: 10%;
 }
 
+#KenMini {
+  text-align: center;
+  padding-bottom: 20%;
+  padding-top: 10%;
+}
+
+#ChunMini {
+  text-align: center;
+  padding-bottom: 30%;
+  padding-top: 10%;
+}
+
+#ZangiefMini {
+  text-align: center;
+  padding-bottom: 20%;
+  padding-top: 10%;
+}
 
 footer {
   color: orange;
