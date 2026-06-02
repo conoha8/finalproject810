@@ -12,7 +12,7 @@ nav#menu {
   justify-content: center;
   gap: 20px;
   border-color: #f9f9f9;
-  background-color: #12122a;
+  background-color: #252544;
   padding: 10px;
 }
 
@@ -21,7 +21,18 @@ nav#menu a {
   text-decoration: none;
   font-size: 16px;
   padding: 6px 14px;
-  border: 1px solid #555;
+  border: 1px solid #b26c6c;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+nav#menu a:hover {
+  color: #6e7ce5;
+  text-decoration: none;
+  background-color: #b26c6c;
+  font-size: 16px;
+  padding: 6px 14px;
+  border: 1px solid #b26c6c;
   border-radius: 4px;
   transition: background-color 0.2s;
 }
