@@ -40,7 +40,7 @@ function changetxtmv(newtxtmv) {
         document.getElementById("mv3").innerText="Tatsumaki"                
     }
     if (newtxtmv === 1) {
-        document.getElementById("mv1").innerText="Hadouken"                
+        document.getElementById("mv1").innerText="Tatsumaki"                
         document.getElementById("mv2").innerText="Shoryuuken"                
         document.getElementById("mv3").innerText="Kama Barai Geri"       
       }
@@ -51,9 +51,13 @@ function changetxtmv(newtxtmv) {
      }
     if (newtxtmv === 3) {
         document.getElementById("mv1").innerText="Screw Piledriver "                
-        document.getElementById("mv2").innerText="Flying Powerbomb "                
+        document.getElementById("mv2").innerText="Double Lariat " //make a dummy <p> in the table and add later               
         document.getElementById("mv3").innerText="Banishing Flat"       
       }
+}
+
+function lariat(){
+  document.getElementById("inp2_2").innerText="->"
 }
 
 
@@ -77,8 +81,7 @@ function changelogo2 (row1,row2,row3) {
     logo3.setAttribute("src",row3);
 }
 
-// Array of image sources
-const frames = [
+const frames1 = [
     'Ryu/Ryu1.PNG',
     'Ryu/Ryu2.PNG',
     'Ryu/Ryu3.PNG',
@@ -86,5 +89,56 @@ const frames = [
     'Ryu/Ryu5.PNG',
     'Ryu/Ryu6.PNG',
     'Ryu/Ryu7.PNG',
+    'Ryu/RyuIdle.PNG'
 ];
+
+const frames2 = [
+    'Ken/Ken1.PNG',
+    'Ken/Ken2.PNG',
+    'Ken/Ken3.PNG',
+    'Ken/Ken4.PNG',
+    'Ken/Ken5.PNG',
+    'Ken/Ken6.PNG',
+    'Ken/Ken7.PNG',
+    'Ken/Ken8.PNG',
+    'Ken/Ken9.PNG',
+];
+
+const frames3 = [
+    'Chun-li/Chun1.PNG',
+    'Chun-li/Chun2.PNG',
+    'Chun-li/Chun3.PNG',
+    'Chun-li/Chun4.PNG',
+    'Chun-li/Chun5.PNG',
+    'Chun-li/Chun6.PNG',
+    'Chun-li/Chun7.PNG',
+    'Chun-li/Chun8.PNG',
+    'Chun-li/Chun9.PNG',
+    'Chun-li/Chun10.PNG',
+    'Chun-li/Chun11.PNG',
+    'Chun-li/Chun12.PNG',
+    'Chun-li/Chun13.PNG',
+    'Chun-li/Chun14.PNG',
+    'Chun-li/Chun15.PNG',
+    'Chun-li/Chun16.PNG',
+    'Chun-li/Chun17.PNG',
+    'Chun-li/Chun18.PNG',
+    'Chun-li/Chun19.PNG',
+    'Chun-li/Chun20.PNG',
+    'Chun-li/ChunMini.PNG',
+];
+
+const frames4 = [
+    'Zangief/Zangief1.PNG',
+    'Zangief/Zangief2.PNG',
+    'Zangief/Zangief3.PNG',
+    'Zangief/Zangief4.PNG',
+    'Zangief/Zangief5.PNG',
+    'Zangief/Zangief6.PNG',
+    'Zangief/Zangief7.PNG',
+    'Zangief/Zangief8.PNG',
+    'Zangief/ZangiefMini.PNG',
+];
+
+
 
