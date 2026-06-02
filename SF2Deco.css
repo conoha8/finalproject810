@@ -1,0 +1,225 @@
+header {
+  text-align: center;
+  padding: 20px;
+  font-size: 40px;
+  font-weight: bold;
+  background-color: #1a1a2e;
+  border-bottom: 3px solid #f99e1a;
+}
+
+nav#menu {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  border-color: #f9f9f9;
+  background-color: #11115c;
+  padding: 10px;
+}
+
+nav#menu a {
+  color: #f3d0ce;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 6px 14px;
+  border: 1px solid #d8deff;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+nav#menu a:hover {
+  color: #0d002d;
+  text-decoration: none;
+  background-color: #e8f400;
+  font-size: 16px;
+  padding: 6px 14px;
+  border: 1px solid #07a8ff;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+nav#charselect {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background-color: #1818ad;
+  padding: 10px;
+}
+
+nav#charselect button{
+  border: 3px solid #19297b;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+nav#charselect button:hover{
+  border: 3px solid #f2fa05;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+table, th, td {
+  border:1px solid rgb(102, 84, 10);
+  color: rgb(9, 28, 107);
+  font-size: larger;
+  background-color: rgb(235, 235, 240);
+  padding: 10px;
+}
+
+section {
+  text-align: center;
+}
+
+#parts {
+    background-color: rgb(253, 240, 213);
+  border-bottom: 3px solid #7e1af9;
+}
+
+h1 {
+  color: rgb(27, 19, 19);
+  background-color: rgb(253, 240, 213);
+  text-align: center;
+}
+
+h2 {
+  color: rgb(193, 18, 31);
+  background-color: rgb(253, 240, 213);
+  text-align: center;
+}
+
+a#animation {
+  color: #af1e16;
+  background-color:rgb(253, 240, 213) ;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 6px 14px;
+  border: 1px solid #555;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+a#animation:hover {
+  color: rgb(253, 240, 213);
+  background-color:rgb(255, 0, 0) ;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 6px 14px;
+  border: 1px solid #555;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+
+
+#top {
+  color:rgb(193, 18, 31);
+  background-color: rgb(253, 240, 213);
+  text-align: center;
+  font-size: 75px;
+}
+
+#charname {
+  text-align: center;
+  color: rgb(255, 0, 0);
+}
+
+p {
+  color: rgb(253, 240, 213);
+  text-align: center;
+}
+
+#charselect {
+  text-align: center;
+  color: rgb(120, 0, 0)
+}
+
+.lm {
+  background-color: rgb(130, 140, 196);
+}
+
+
+#qcr {
+  position: relative;
+}
+
+#qcrd {
+  display: none;
+  background-color: #f9f9f9;
+  color: black;
+  min-width: 70px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 16px 16px;
+  font: 20px;
+}
+
+#qcr:hover #qcrd {
+  display: inline-flex;
+}
+
+#qcl {
+  position: relative;
+}
+
+#qcld {
+  display: none;
+  background-color: #f9f9f9;
+  color: black;
+  min-width: 70px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 16px 16px;
+}
+
+#qcl:hover #qcld {
+  display: inline-flex;
+}
+
+#RyuMini {
+  text-align: center;
+  padding-bottom: 20%;
+  padding-top: 10%;
+}
+
+#KenMini {
+  text-align: center;
+  padding-bottom: 20%;
+  padding-top: 10%;
+}
+
+#ChunMini {
+  text-align: center;
+  padding-bottom: 30%;
+  padding-top: 10%;
+}
+
+#ZangiefMini {
+  text-align: center;
+  padding-bottom: 20%;
+  padding-top: 10%;
+}
+
+.moveit {
+  color: #af1e16;
+  background-color:rgb(253, 240, 213) ;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 6px 14px;
+  border: 1px solid #555;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.moveit:hover{
+  color: rgb(253, 240, 213);
+  background-color:rgb(255, 0, 0) ;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 6px 14px;
+  border: 1px solid #555;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+
+footer {
+  color: orange;
+  background-color: #1a1a2e;
+}

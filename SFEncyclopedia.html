@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+
+<head>   
+    <title>STREET FIGHTER 2 ENCYCLOPEDIA</title>
+    <link rel="stylesheet" href="SF2Deco.css">
+    <meta charset="UTF-8">
+    <meta name="description" content="Street Fighter Moveset">
+    <script src="hadouken.js"></script>
+</head>
+
+<header>
+  <div id="top">
+    <strong>STREET FIGHTER 2 ENCYCLOPEDIA</strong>
+  </div>
+</header>
+
+<body style="background-color: rgb(14, 36, 109)">
+<nav id="menu">
+    <a href="index.html">&#127968; Home</a>
+    <a href="pokemon.html">Pokemon</a>
+    <a href="overwatch.html">Overwatch</a>
+</nav>
+    <p>Through this website, you will be able to learn the esssential moves of the characters in Street Fighter 2!</p>
+  <p>Press the a button featuring a character you like!</p>
+
+
+<nav id="charselect">
+  <button onclick="
+  imageslideP('WebProgram_Finale/Ryu/RyuP.PNG');
+  changecharname(0)
+  changetxtP(0);
+  changelogo1('WebProgram_Finale/logo/qc-r.png','WebProgram_Finale/logo/z-r.png','WebProgram_Finale/logo/qc-l.png');
+  changelogo2('WebProgram_Finale/logo/anyp.png','WebProgram_Finale/logo/anyp.png','WebProgram_Finale/logo/anyk.png');
+  changetxtmv(0)" > <img src="WebProgram_Finale/Ryu/RyuBTN.PNG" width="75" height="100"></button>
+  <button onclick="
+  imageslideP('WebProgram_Finale/Ken/KenP.PNG');
+  changecharname(1);
+  changetxtP(1);
+  changelogo1('WebProgram_Finale/logo/qc-l.png','WebProgram_Finale/logo/z-r.png','WebProgram_Finale/logo/qc-r.png');
+  changelogo2('WebProgram_Finale/logo/anyk.png','WebProgram_Finale/logo/anyp.png','WebProgram_Finale/logo/anyk.png');
+  changetxtmv(1)"> <img src="WebProgram_Finale/Ken/KenBTN.PNG" width="75" height="100"></button>
+  <button onclick="
+  imageslideP('WebProgram_Finale/Chun-Li/Chun-LiP.PNG');
+  changecharname(2);
+  changetxtmv(2);
+  changetxtP(2);
+  changelogo1('WebProgram_Finale/logo/hold-hor.png','WebProgram_Finale/logo/hold-hor.png','WebProgram_Finale/logo/tap.png');
+  changelogo2('WebProgram_Finale/logo/anyp.png','WebProgram_Finale/logo/anyk.png','WebProgram_Finale/logo/anyk.png');
+  "> <img src="WebProgram_Finale/Chun-Li/Chun-LiBTN.PNG" width="75" height="100"></button>
+  <button onclick="
+  imageslideP('WebProgram_Finale/Zangief/ZangiefP.PNG');
+  changecharname(3);
+  changetxtmv(3);
+  changetxtP(3);
+  changelogo1('WebProgram_Finale/logo/fc.png','WebProgram_Finale/logo/3p.png','WebProgram_Finale/logo/qc-d.png');
+  changelogo2('WebProgram_Finale/logo/anyp.png','WebProgram_Finale/logo/r.png','WebProgram_Finale/logo/anyp.png');
+  lariat();
+  "> <img src="WebProgram_Finale/Zangief/ZangiefBTN.PNG" width="75" height="100"></button>
+</nav>
+
+
+<section id="profile">
+<h1 id="parts">Character Lore</h1>
+<h2 id="charname">Ryu</h2>
+
+<aside>
+      <img id="portrait" src="WebProgram_Finale/Ryu\RyuP.PNG" width="150" height="200">
+</aside>
+
+<p id="lore">
+Ryu was an orphaned child, with no knowledge of who his parents were or if they are still alive. When Ryu was a young child, he was adopted by a man named Gouken and began living with him as well as learning a mysterious martial art. Gouken would later train his best friend's bratty son, Ken Masters, who served not only as a sparring partner for Ryu, but also to give Ryu some company since Gouken was the only person Ryu had seen in a long time due to the seclusion of Gouken's dojo. Ryu looked up to Gouken as a father figure during his early years and Ken as a best friend and surrogate brother, which is how their relationship remains to this day.
+</section>
+
+
+   <!-- ask teacher how to make it horizontal-->
+
+<section id="general">
+  <h1>Moveset</h1>
+  <p>These moves only work if the character is facing right! If they are facing left, reverse the direction of your input</p>
+  <a id="animation" href="SFEncyclopedia_Animated.html">Press here to see the moves in action!</a>
+  <br>
+  <br>
+  
+    <table style="width:100%">
+  <tr>
+    <th>Special Moves</th>
+    <th>Input</th>
+  </tr>
+  <tr>
+    <td id="mv1">Hadouken</td>
+    <td class="inp"><img id="inp1_1" src="WebProgram_Finale/logo/qc-r.png"> + <img id="inp1_2" src="WebProgram_Finale/logo/anyp.PNG"></td>
+  </tr>
+  <tr>
+    <td id="mv2">Shouryuuken</td>
+    <td><img id="inp2_1" src="WebProgram_Finale/logo/z-r.png"> + <img id="inp2_2" src="WebProgram_Finale/logo/anyp.png"></td>
+  </tr>
+  <tr>
+    <td id="mv3">Tatsumaki</td>
+    <td><img id="inp3_1" src="WebProgram_Finale/logo/qc-l.png"> + <img id="inp3_2" src="WebProgram_Finale/logo/anyk.png"></td>
+  </tr>
+</table>
+</section>
+
+<section>
+<table>
+  <h1>Icon Meaning</h1>
+  <p>The arrows represent the movement you must make with your joystick to activate the special move!</p>
+<tr>
+ <td class="lm">
+<div id="qcr"><img src="WebProgram_Finale/logo/qc-r.png" width="50px">
+  <div id="qcrd">↓↘→</div>
+ </td> 
+ <td class="lm">
+<div id="qcr"><img src="WebProgram_Finale/logo/qc-l.png" width="50px">
+  <div id="qcrd">↓↙←</div>
+  </td>
+  <td class="lm">
+<div id="qcr"><img src="WebProgram_Finale/logo/z-r.png" width="43px">
+  <div id="qcrd">↓↘→</div>
+ </td> 
+ <td class="lm">
+<div id="qcr"><img src="WebProgram_Finale/logo/fc.png" width="50px">
+  <div id="qcrd">→↘↓↙←↖↑↗→</div>
+  </td>
+ <td class="lm">
+<div id="qcr"><img src="WebProgram_Finale/logo/hold-hor.png" width="50px">
+  <div id="qcrd">Hold (←) for a few seconds then move joystick to (→)</div>
+  </td>
+ <td class="lm">
+<div id="qcr"><img src="WebProgram_Finale/logo/hold-ver.png" width="50px">
+  <div id="qcrd">Hold (↓) for a few seconds then move joystick to (↑)</div>
+  </td>
+ <td class="lm">
+<div id="qcr"><img src="WebProgram_Finale/logo/qc-d.png" width="50px">
+  <div id="qcrd">→↘↓</div>
+  </td>
+ <td class="lm">
+<div id="qcr"><img src="WebProgram_Finale/logo/tap.png" width="50px">
+  <div id="qcrd">press repeatedly the buttons with the same type (punch or kick) as the final button in the special move </div>
+  </td>
+ <td class="lm">
+<div id="qcr"><img src="WebProgram_Finale/logo/3p.png" width="50px">
+  <div id="qcrd">Press 3 different punch buttons at the same time</div>
+  </td>
+ <td class="lm">
+<div id="qcr"><img src="WebProgram_Finale/logo/r.png" width="50px">
+  <div id="qcrd">→</div>
+  </td>
+</tr>
+</div>
+</table>   
+
+<footer>
+    Shoutout to Spriter's Resources and Strategy Wiki!
+</footer>
+<br>
+
+
+
+</body>
+
