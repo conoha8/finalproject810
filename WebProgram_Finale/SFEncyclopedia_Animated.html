@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+
+<head>   
+    <title>STREET FIGHTER 2 ENCYCLOPEDIA</title>
+    <link rel="stylesheet" href="SF2Deco.css">
+    <meta charset="UTF-8">
+    <meta name="description" content="Street Fighter Moveset">
+    <script src="hadouken.js"></script>
+</head>
+
+<body style="background-color: rgb(14, 36, 109); text-align: center;">
+
+<h1>Move Animations!</h1>
+<p>Wonder how each move looks before trying them out in-game? Press the button to see the fighters use their signature moves!</p>
+
+<h2>Ryu</h2>
+<p>Ryu does a jumping uppercut, an effective response to jumping opponents.</p>
+<button onclick="
+  startAnimation1()
+  ">SHOURYUUKEN!!!!</button>
+<br>
+<br>
+
+<img id="RyuMini" src="Ryu/RyuIdle.PNG" width="90px"> 
+ </img> 
+
+<br>
+<br>
+
+<h2>Ken</h2>
+<p>Ken jumps and rotates while kicking, a versatile move that hits multiple times.</p>
+<button onclick="
+  startAnimation2()
+  ">TATSUMAKI!!!!</button>
+<br>
+<br>  
+
+<img id="KenMini" src="Ken/Ken9.PNG" width="90px"> 
+ </img> 
+
+<br>
+<br>
+
+<h2>Chun-Li</h2>
+<p>Chun-li flies through the screen by spinning her legs midair, kicking foes. A bit hard to execute but can deal high damage if it hits the opponent.</p>
+<button onclick="
+  startAnimation3()
+  ">SPINNING BIRD KICK!!!!</button>
+<br>
+<br>
+
+
+<img id="ChunMini" src="Chun-Li/ChunMini.PNG" width="90px"> 
+ </img> 
+<br>
+<br>
+
+
+<h2>Zangief</h2>
+<p>Zangief rotates his arms, hitting opponents. Great for dealing with jumping opponents.</p>
+
+<button onclick="
+  startAnimation4()
+  ">DOUBLE LARIAT!!!!</button>
+<br>
+<br>
+
+<img id="ZangiefMini" src="Zangief/ZangiefMini.PNG" width="90px"> 
+ </img> 
+<br>
+<br>
+
+
+
+</section>
+
+<script>
+
+let active = 0;
+let currentFrame = 0;
+let speed = 200;
+var intervalId = null;      // Store interval ID for stopping
+const imgElement1 = document.getElementById('RyuMini');
+const imgElement2 = document.getElementById('KenMini');
+const imgElement3 = document.getElementById('ChunMini');
+const imgElement4 = document.getElementById('ZangiefMini');
+
+
+// Change image every 100ms (10 fps)
+function changeImage1() {
+            // Update image source
+            imgElement1.src = frames1[currentFrame];
+      
+            // Move to next frame, loop back to 0 when reaching the end
+            currentFrame = (currentFrame + 1) % frames1.length;
+        }
+
+function changeImage2() {
+            // Update image source
+            imgElement2.src = frames2[currentFrame];
+      
+            // Move to next frame, loop back to 0 when reaching the end
+            currentFrame = (currentFrame + 1) % frames2.length;
+        }
+
+function changeImage3() {
+            // Update image source
+            imgElement3.src = frames3[currentFrame];
+      
+            // Move to next frame, loop back to 0 when reaching the end
+            currentFrame = (currentFrame + 1) % frames3.length;
+        }
+
+function changeImage4() {
+            // Update image source
+            imgElement4.src = frames4[currentFrame];
+      
+            // Move to next frame, loop back to 0 when reaching the end
+            currentFrame = (currentFrame + 1) % frames4.length;
+        }
+      
+
+function startAnimation1() {
+            // Start the interval: call changeImage every animationSpeed milliseconds
+            intervalId = setInterval(changeImage1, speed);
+            setTimeout(function() {
+              clearInterval(intervalId);
+            },1800)
+        }
+
+function startAnimation2() {            
+            // Start the interval: call changeImage every animationSpeed milliseconds
+            intervalId = setInterval(changeImage2, speed);
+            
+            setTimeout(function() {
+              clearInterval(intervalId);
+            },2000)
+        }
+
+function startAnimation3() {
+            // Prevent multiple intervals
+            intervalId = setInterval(changeImage3, speed);
+            
+            setTimeout(function() {
+              clearInterval(intervalId);
+            },4400)
+        }
+
+function startAnimation4() {
+            // Prevent multiple intervals
+            intervalId = setInterval(changeImage4, speed);
+            
+            setTimeout(function() {
+              clearInterval(intervalId);
+            },2000)
+        }
+
+
+</script>
+
+
+<!--
+let currentFrame = 0;
+let intervalId = null;      // Store interval ID for stopping
+const imgElement = document.getElementById('RyuMini');
+
+// Change image every 100ms (10 fps)
+const interval = setInterval(() => {
+    imgElement.src = frames[currentFrame];
+    currentFrame = (currentFrame + 1) % frames.length;
+}, 100);-->
+
+<footer>
+    Shoutout to Spriter's Resources and Strategy Wiki!
+</footer>
+<br>
+
+
+
+</body>
+
