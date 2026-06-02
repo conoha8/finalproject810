@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<!-- overwatch.html - Overwatch Hero Encyclopedia
+     Student ID: S25080Q  Name: Gen
+     Text: overwatch.blizzard.com, overwatch.fandom.com
+     Images: d15f34w2p8l1cc.cloudfront.net (Blizzard CDN) -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Overwatch Hero Encyclopedia">
+  <title>Overwatch — Game Encyclopedia</title>
+  <link rel="stylesheet" href="games.css">
+  <style>
+    .card img {
+      width: 90px;
+      height: 90px;
+      object-fit: contain;
+      border-radius: 50%;
+      background-color: #1a1a3a;
+      padding: 6px;
+    }
+    #detail-img {
+      float: right;
+      width: 130px;
+      height: 130px;
+      object-fit: contain;
+      border-radius: 50%;
+      background-color: #1a1a3a;
+      border: 3px solid #f99e1a;
+      padding: 8px;
+      margin: 0 0 10px 15px;
+    }
+  </style>
+</head>
+
+<body class="ow-theme">
+
+  <header>OVERWATCH</header>
+
+  <nav class="top-nav">
+    <a href="index.html">&#127968; Home</a>
+    <a href="WebProgram_Finale/SFEncyclopedia.html">Street Fighter II</a>
+    <a href="pokemon.html">Pokémon Violet</a>
+  </nav>
+
+  <section class="intro-section">
+    <h2>About Overwatch</h2>
+    <div style="background:linear-gradient(135deg,#0a1628,#1a3a6e,#7a3a00);border-radius:8px;padding:30px 20px;text-align:center;margin-bottom:15px;border:1px solid #f99e1a;">
+      <p style="color:#f99e1a;font-size:42px;font-weight:bold;margin:0;letter-spacing:4px;">OVERWATCH 2</p>
+      <p style="color:#ccc;margin:8px 0 0;font-size:15px;">Team-based multiplayer action — Blizzard Entertainment, 2022</p>
+    </div>
+    <p>
+      Overwatch is a team-based multiplayer first-person shooter developed and published by
+      Blizzard Entertainment. First released in May 2016, the game pits two teams of six players
+      against each other across a variety of maps. Players choose from over 30 heroes, each with
+      unique abilities, divided into three roles: Tank, Damage, and Support.
+    </p>
+    <br>
+    <p>
+      The story is set roughly 60 years in the future. Following a global crisis known as the Omnic
+      Crisis, a UN strike force called Overwatch was formed. Though eventually disbanded, its heroes
+      continue to fight for a better world.
+    </p>
+  </section>
+
+  <h1 style="color:#f99e1a;background:none;margin-top:10px;">Click a Hero to Learn More</h1>
+
+  <div id="detail-box">
+    <img id="detail-img" src="" alt="">
+    <h2 id="detail-name"></h2>
+    <p id="detail-role" style="color:#f99e1a;margin-bottom:8px;"></p>
+    <p id="detail-desc"></p>
+  </div>
+
+  <!-- Hero icons from overwatch.blizzard.com hero pages (Blizzard CDN) -->
+  <div class="card-grid">
+
+    <div class="card"
+      data-name="Tracer"
+      data-role="Damage"
+      data-img="https://d15f34w2p8l1cc.cloudfront.net/overwatch/644e5b1f52930510c1172c5b68f9cb2769195f71a84310ff1b2824dbfa2dab18.png"
+      data-desc="Tracer, real name Lena Oxton, is a time-jumping adventurer and an irrepressible force for good. A former Overwatch test pilot, she was lost in a time loop after her aircraft's teleportation matrix malfunctioned — until Winston built her a chronal accelerator. She can blink short distances and rewind time itself.">
+      <img src="https://d15f34w2p8l1cc.cloudfront.net/overwatch/644e5b1f52930510c1172c5b68f9cb2769195f71a84310ff1b2824dbfa2dab18.png" alt="Tracer">
+      <h3>Tracer</h3>
+      <p>Damage</p>
+    </div>
+
+    <div class="card"
+      data-name="Reinhardt"
+      data-role="Tank"
+      data-img="https://d15f34w2p8l1cc.cloudfront.net/overwatch/c52c47ea96e1485d5eefb4b968b8ddd3c85705023f9696f4d5ea9c70887e060f.png"
+      data-desc="Reinhardt Wilhelm is a stalwart champion of justice who wields an 11-meter rocket hammer and a powered suit of armour. A veteran of the Crusaders, he joined Overwatch to protect the innocent. His personal code of honour compels him to stand for the weak and challenge the strong.">
+      <img src="https://d15f34w2p8l1cc.cloudfront.net/overwatch/c52c47ea96e1485d5eefb4b968b8ddd3c85705023f9696f4d5ea9c70887e060f.png" alt="Reinhardt">
+      <h3>Reinhardt</h3>
+      <p>Tank</p>
+    </div>
+
+    <div class="card"
+      data-name="Ana"
+      data-role="Support"
+      data-img="https://d15f34w2p8l1cc.cloudfront.net/overwatch/261f0fabdaf55159b9e13103abd465cfe3bf50a3906f97b1a47e9c2dc961905b.png"
+      data-desc="Ana Amari is one of the founding members of Overwatch and one of the world's greatest snipers. She uses a biotic rifle that can heal allies or damage enemies with the same shot. After faking her death, she returned to the battlefield when she realised the world still needed her skills.">
+      <img src="https://d15f34w2p8l1cc.cloudfront.net/overwatch/261f0fabdaf55159b9e13103abd465cfe3bf50a3906f97b1a47e9c2dc961905b.png" alt="Ana">
+      <h3>Ana</h3>
+      <p>Support</p>
+    </div>
+
+    <div class="card"
+      data-name="Genji"
+      data-role="Damage"
+      data-img="https://d15f34w2p8l1cc.cloudfront.net/overwatch/72c205ea67dbe8dad29066f1b63b9377fe269eb134a2d58c203c16ed9e641f0c.png"
+      data-desc="Genji Shimada is a cybernetic ninja who has made peace with the dual nature of his existence. Left for dead by his brother, he was rebuilt by Overwatch. After years of inner conflict, he found balance under the omnic monk Zenyatta and now lends his skills to a world in crisis.">
+      <img src="https://d15f34w2p8l1cc.cloudfront.net/overwatch/72c205ea67dbe8dad29066f1b63b9377fe269eb134a2d58c203c16ed9e641f0c.png" alt="Genji">
+      <h3>Genji</h3>
+      <p>Damage</p>
+    </div>
+
+  </div>
+
+  <footer>Content: overwatch.blizzard.com, overwatch.fandom.com | Images: Blizzard CDN</footer>
+
+  <script>
+    // Student ID: S25080Q  Name: Gen
+
+    const cards      = document.querySelectorAll(".card");
+    const detailBox  = document.getElementById("detail-box");
+    const detailImg  = document.getElementById("detail-img");
+    const detailName = document.getElementById("detail-name");
+    const detailRole = document.getElementById("detail-role");
+    const detailDesc = document.getElementById("detail-desc");
+
+    cards.forEach(function (card) {
+      card.addEventListener("click", function () {
+        detailImg.setAttribute("src",  card.getAttribute("data-img"));
+        detailImg.setAttribute("alt",  card.getAttribute("data-name"));
+        detailName.textContent = card.getAttribute("data-name");
+        detailRole.textContent = "Role: " + card.getAttribute("data-role");
+        detailDesc.textContent = card.getAttribute("data-desc");
+        detailImg.style.borderRadius = "50%";
+        detailImg.style.padding = "8px";
+        detailBox.classList.add("visible");
+        detailBox.scrollIntoView({ behavior: "smooth", block: "center" });
+      });
+    });
+  </script>
+
+</body>
+</html>

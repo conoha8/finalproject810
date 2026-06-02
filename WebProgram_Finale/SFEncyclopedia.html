@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+ <!--
+one-word Explanation : "animating"
+ To do list:
+ minimum 5 HTML files and 2 CSS files
+ page 1 : encyclopedia for 4 characters
+ page 2 : about
+ page 3: contact
+ page 4 : museum to demonstrate moves for 4 characters (if no time, credits)
+ page 5 : Comment form
+ -->
+<head>   
+    <title>STREET FIGHTER 2 ENCYCLOPEDIA</title>
+    <link rel="stylesheet" href="SF2Deco.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <meta name="description" content="Street Fighter Moveset">
+    <script src="hadouken.js"></script>
+</head>
+
+<header>
+  <div id="top">
+    <strong>STREET FIGHTER 2 ENCYCLOPEDIA</strong>
+  </div>
+</header>
+    <p>Through this website, you will be able to learn the esssential moves of the characters in Street Fighter 2!</p>
+
+<body style="background-color: rgb(14, 36, 109)">
+
+<nav id="charselect">
+  <button onclick="
+  imageslideP('Ryu/RyuP.PNG');
+  changecharname(0)
+  changetxtP(0);
+  changelogo1('logo/qc-r.png','logo/z-r.png','logo/qc-l.png');
+  changelogo2('logo/anyp.png','logo/anyp.png','logo/anyk.png');
+  changetxtmv(0)" > <img src="Ryu/RyuBTN.PNG" width="75" height="100"></button>
+  <button onclick="
+  imageslideP('Ken/KenP.PNG');
+  changecharname(1);
+  changetxtP(1);
+  changelogo1('logo/qc-r.png','logo/qc-r.png','logo/qc-r.png');
+  changelogo2('logo/anyp.png','logo/anyp.png','logo/anyk.png');
+  changetxtmv(1)"> <img src="Ken/KenBTN.PNG" width="75" height="100"></button>
+  <button onclick="
+  imageslideP('Chun-Li/Chun-LiP.PNG');
+  changecharname(2);
+  changetxtmv(2);
+  changetxtP(2);
+  changelogo1('logo/hold-hor.png','logo/hold-hor.png','logo/tap.png');
+  changelogo2('logo/anyp.png','logo/anyk.png','logo/anyk.png');
+  "> <img src="Chun-Li/Chun-LiBTN.PNG" width="75" height="100"></button>
+  <button onclick="
+  imageslideP('Zangief/ZangiefP.PNG');
+  changecharname(3);
+  changetxtmv(3);
+  changetxtP(3);
+  changelogo1('logo/fc.png','logo/fc.png','logo/qc-d.png');
+  changelogo2('logo/anyp.png','logo/anyk.png','logo/anyp.png');
+  "> <img src="Zangief/ZangiefBTN.PNG" width="75" height="100"></button>
+</nav>
+
+
+<section id="profile">
+<h1>Character Lore</h1>
+<h2 id="charname">Ryu</h2>
+
+<aside>
+      <img id="portrait" src="Ryu\RyuP.PNG" width="150" height="200">
+</aside>
+
+<p id="lore">
+Ryu was an orphaned child, with no knowledge of who his parents were or if they are still alive. When Ryu was a young child, he was adopted by a man named Gouken and began living with him as well as learning a mysterious martial art. Gouken would later train his best friend's bratty son, Ken Masters, who served not only as a sparring partner for Ryu, but also to give Ryu some company since Gouken was the only person Ryu had seen in a long time due to the seclusion of Gouken's dojo. Ryu looked up to Gouken as a father figure during his early years and Ken as a best friend and surrogate brother, which is how their relationship remains to this day.
+</section>
+
+
+   <!-- ask teacher how to make it horizontal-->
+
+<section id="general">
+  <h1>Moveset</h1>
+  <p>These moves only work if the character is facing right! If they are facing left, reverse the direction of your input e.g </p>
+    <table style="width:100%">
+  <tr>
+    <th>Special Moves</th>
+    <th>Input</th>
+  </tr>
+  <tr>
+    <td id="mv1">Hadouken</td>
+    <td class="inp"><img id="inp1_1" src="logo/qc-r.png"> + <img id="inp1_2" src="logo/anyp.PNG"></td>
+  </tr>
+  <tr>
+    <td id="mv2">Shouryuuken</td>
+    <td><img id="inp2_1" src="logo/z-r.png"> + <img id="inp2_2" src="logo/anyp.png"></td>
+  </tr>
+  <tr>
+    <td id="mv3">Tatsumaki</td>
+    <td><img id="inp3_1" src="logo/qc-l.png"> + <img id="inp3_2" src="logo/anyk.png"></td>
+  </tr>
+</table>
+</section>
+
+
+<table ><!-- maybe put the divs in a table instead? To make them horizontal -->
+  <h1>Icon Meaning</h1>
+<tr>
+ <td class="lm">
+<div id="qcr"><img src="logo/qc-r.png" width="50px">
+  <div id="qcrd">↓↘→</div>
+ </td> 
+ <td class="lm">
+<div id="qcr"><img src="logo/qc-l.png" width="50px">
+  <div id="qcrd">↓↙←</div>
+  </td>
+  <td class="lm">
+<div id="qcr"><img src="logo/z-r.png" width="43px">
+  <div id="qcrd">↓↘→</div>
+ </td> 
+ <td class="lm">
+<div id="qcr"><img src="logo/fc.png" width="50px">
+  <div id="qcrd">→↘↓↙←↖↑↗→</div>
+  </td>
+ <td class="lm">
+<div id="qcr"><img src="logo/hold-hor.png" width="50px">
+  <div id="qcrd">Hold (←) for a few seconds then move joystick to (→)</div>
+  </td>
+ <td class="lm">
+<div id="qcr"><img src="logo/hold-ver.png" width="50px">
+  <div id="qcrd">Hold (↓) for a few seconds then move joystick to (↑)</div>
+  </td>
+ <td class="lm">
+<div id="qcr"><img src="logo/qc-d.png" width="50px">
+  <div id="qcrd">→↘↓</div>
+  </td>
+ <td class="lm">
+<div id="qcr"><img src="logo/tap.png" width="50px">
+  <div id="qcrd">press repeatedly the buttons with the same type (punch or kick) as the final button in the special move </div>
+  </td>
+</tr>
+</div>
+</table>   
+
+<h1>Animations (For later page)</h1>
+
+<section>
+<img id="RyuMini" src="Ryu/RyuIdle.PNG"> 
+ </img> 
+<br>
+<br>
+  <button onclick="
+  startAnimation()
+  ">SHOURYUUKEN!!!!</button>
+    <button onclick="
+  stopAnimation()
+  ">Stop Animation</button>
+</section>
+
+
+<script>
+
+
+let currentFrame = 0;
+let speed = 100;
+let intervalId = null;      // Store interval ID for stopping
+const imgElement = document.getElementById('RyuMini');
+
+// Change image every 100ms (10 fps)
+function changeImage() {
+            // Update image source
+            imgElement.src = frames[currentFrame];
+      
+            // Move to next frame, loop back to 0 when reaching the end
+            currentFrame = (currentFrame + 1) % frames.length;
+        }
+function startAnimation() {
+            // Prevent multiple intervals
+            if (intervalId !== null) {
+                console.log('Animation already running');
+                return;
+            }
+            
+            // Start the interval: call changeImage every animationSpeed milliseconds
+            intervalId = setInterval(changeImage, speed);
+            console.log('Animation started with speed: ' + animationSpeed + 'ms');
+        }
+
+function stopAnimation() {
+  if (intervalId !== null) {
+    clearInterval(intervalId);
+    intervalId = null;
+  }
+
+}
+
+</script>
+
+
+<!--
+let currentFrame = 0;
+let intervalId = null;      // Store interval ID for stopping
+const imgElement = document.getElementById('RyuMini');
+
+// Change image every 100ms (10 fps)
+const interval = setInterval(() => {
+    imgElement.src = frames[currentFrame];
+    currentFrame = (currentFrame + 1) % frames.length;
+}, 100);-->
+
+<footer>
+    Shoutout to Spriter's Resources and Strategy Wiki!
+</footer>
+<br>
+
+
+
+</body>
+

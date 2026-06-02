@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!-- pokemon.html - Pokemon Violet Encyclopedia
+     Student ID: S25080Q  Name: Gen
+     Text: scarletviolet.pokemon.com, bulbapedia.bulbagarden.net
+     Images: PokeAPI official-artwork (stored locally in img/) -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pokemon Violet Encyclopedia">
+  <title>Pokémon Violet — Game Encyclopedia</title>
+  <link rel="stylesheet" href="games.css">
+</head>
+
+<body class="pk-theme">
+
+  <header>POKÉMON VIOLET</header>
+
+  <nav class="top-nav">
+    <a href="index.html">&#127968; Home</a>
+    <a href="WebProgram_Finale/SFEncyclopedia.html">Street Fighter II</a>
+    <a href="overwatch.html">Overwatch</a>
+  </nav>
+
+  <section class="intro-section">
+    <h2>About Pokémon Violet</h2>
+    <div style="background:linear-gradient(135deg,#1a0a2e,#3b1f6e,#6a2fa0);border-radius:8px;padding:30px 20px;text-align:center;margin-bottom:15px;border:1px solid #c084fc;">
+      <p style="color:#c084fc;font-size:42px;font-weight:bold;margin:0;letter-spacing:4px;">POKÉMON VIOLET</p>
+      <p style="color:#ccc;margin:8px 0 0;font-size:15px;">Generation IX open-world RPG — Game Freak / Nintendo, 2022</p>
+    </div>
+    <p>
+      Pokémon Violet is a 2022 role-playing game developed by Game Freak for the Nintendo Switch.
+      It is part of Generation IX and introduces an open-world structure set in the Spain-inspired
+      Paldea region.
+    </p>
+    <br>
+    <p>
+      Players ride the legendary Pokémon Miraidon across three story paths: Victory Road (Gym
+      Leaders), Starfall Street (Team Star), and Path of Legends (Titan Pokémon). Over 100 new
+      Pokémon were introduced, along with the Terastal phenomenon which allows type changes.
+    </p>
+  </section>
+
+  <a class="calc-btn" href="type-calculator.html">&#9876;&#65039; Open Type Effectiveness Calculator</a>
+
+  <h1 style="color:#c084fc;background:none;margin-top:10px;">Click a Starter to Learn More</h1>
+
+  <div id="detail-box">
+    <img id="detail-img" src="" alt="">
+    <h2 id="detail-name"></h2>
+    <p id="detail-type" style="color:#c084fc;margin-bottom:8px;"></p>
+    <p id="detail-desc"></p>
+  </div>
+
+  <div class="card-grid">
+
+    <div class="card"
+      data-name="Sprigatito"
+      data-type="Grass Type"
+      data-img="img/pk_sprigatito.png"
+      data-desc="Sprigatito is a Grass-type starter from the Paldea region. Its fluffy fur photosynthesises sunlight, and it releases a sweet aroma from its forepaws that causes opponents to lose focus. Capricious and attention-seeking by nature. Its final evolution is Meowscarada.">
+      <img src="img/pk_sprigatito.png" alt="Sprigatito">
+      <h3>Sprigatito</h3>
+      <p>Grass</p>
+    </div>
+
+    <div class="card"
+      data-name="Fuecoco"
+      data-type="Fire Type"
+      data-img="img/pk_fuecoco.png"
+      data-desc="Fuecoco is a laid-back Fire-type starter. It absorbs heat through the square scales on its belly and vents fire energy from the top of its head. Often seen dancing happily. Its final evolution is Skeledirge, a Fire/Ghost type.">
+      <img src="img/pk_fuecoco.png" alt="Fuecoco">
+      <h3>Fuecoco</h3>
+      <p>Fire</p>
+    </div>
+
+    <div class="card"
+      data-name="Quaxly"
+      data-type="Water Type"
+      data-img="img/pk_quaxly.png"
+      data-desc="Quaxly is an earnest, tidy Water-type starter. The gel on its hair repels water and grime. It strikes opponents with powerful kicks. Its final evolution is Quaquaval, a Water/Fighting type.">
+      <img src="img/pk_quaxly.png" alt="Quaxly">
+      <h3>Quaxly</h3>
+      <p>Water</p>
+    </div>
+
+  </div>
+
+  <footer>Content: scarletviolet.pokemon.com, bulbapedia.bulbagarden.net | Images: PokéAPI</footer>
+
+  <script>
+    // Student ID: S25080Q  Name: Gen
+
+    const cards      = document.querySelectorAll(".card");
+    const detailBox  = document.getElementById("detail-box");
+    const detailImg  = document.getElementById("detail-img");
+    const detailName = document.getElementById("detail-name");
+    const detailType = document.getElementById("detail-type");
+    const detailDesc = document.getElementById("detail-desc");
+
+    cards.forEach(function (card) {
+      card.addEventListener("click", function () {
+        detailImg.setAttribute("src",  card.getAttribute("data-img"));
+        detailImg.setAttribute("alt",  card.getAttribute("data-name"));
+        detailName.textContent = card.getAttribute("data-name");
+        detailType.textContent = card.getAttribute("data-type");
+        detailDesc.textContent = card.getAttribute("data-desc");
+        detailBox.classList.add("visible");
+        detailBox.scrollIntoView({ behavior: "smooth", block: "center" });
+      });
+    });
+  </script>
+
+</body>
+</html>

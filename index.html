@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!-- index.html - Game Encyclopedia Homepage
+     Student ID: S25080Q  Name: Gen -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Game Encyclopedia - Street Fighter 2, Overwatch, Pokemon Violet">
+  <title>Game Encyclopedia</title>
+  <link rel="stylesheet" href="WebProgram_Finale/SF2Deco.css">
+  <style>
+    body {
+      background-color: rgb(14, 36, 109);
+      font-family: Arial, sans-serif;
+      margin: 0;
+    }
+    #top {
+      color: rgb(193, 18, 31);
+      background-color: rgb(253, 240, 213);
+      text-align: center;
+      font-size: 52px;
+      font-weight: bold;
+      padding: 20px 10px;
+    }
+    #subtitle {
+      text-align: center;
+      color: rgb(253, 240, 213);
+      font-size: 18px;
+      margin: 20px 0;
+    }
+    #game-grid {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      padding: 40px 20px;
+    }
+    .game-card {
+      width: 260px;
+      background-color: rgb(20, 50, 140);
+      border: 2px solid rgb(102, 84, 10);
+      border-radius: 12px;
+      text-align: center;
+      padding: 20px;
+      cursor: pointer;
+      text-decoration: none;
+      color: inherit;
+      transition: transform 0.2s, border-color 0.2s;
+      display: block;
+    }
+    .game-card:hover {
+      transform: scale(1.05);
+      border-color: rgb(255, 200, 50);
+    }
+    .game-card img {
+      width: 200px;
+      height: 150px;
+      object-fit: contain;
+      border-radius: 8px;
+    }
+    .game-card h2 {
+      color: rgb(193, 18, 31);
+      background-color: rgb(253, 240, 213);
+      font-size: 20px;
+      padding: 6px;
+      margin: 12px 0 6px 0;
+      border-radius: 4px;
+    }
+    .game-card p {
+      color: rgb(200, 210, 240);
+      font-size: 14px;
+    }
+    footer {
+      color: orange;
+      text-align: center;
+      padding: 20px;
+      font-size: 13px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div id="top">GAME ENCYCLOPEDIA</div>
+  </header>
+
+  <p id="subtitle">Choose a game to explore!</p>
+
+  <div id="game-grid">
+
+    <a class="game-card" href="WebProgram_Finale/SFEncyclopedia.html">
+      <img src="WebProgram_Finale/Ryu/RyuP.PNG" alt="Street Fighter 2 - Ryu">
+      <h2>Street Fighter II</h2>
+      <p>Explore character lore and special move inputs for classic SF2 fighters.</p>
+    </a>
+
+    <a class="game-card" href="overwatch.html">
+      <img src="https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt45586c965db08717/6823abc24dee72d806fff5e2/OpenGraph.jpg" alt="Overwatch">
+      <h2>Overwatch</h2>
+      <p>Meet the heroes of Overwatch — their roles, abilities, and backstories.</p>
+    </a>
+
+    <a class="game-card" href="pokemon.html">
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1008.png" alt="Miraidon - Pokemon Violet">
+      <h2>Pokémon Violet</h2>
+      <p>Discover the world of Paldea, meet the starters, and use the Type Calculator.</p>
+    </a>
+
+  </div>
+
+  <footer>Game Encyclopedia — Web Programming Final Project</footer>
+
+</body>
+</html>

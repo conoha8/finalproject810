@@ -1,0 +1,198 @@
+/* games.css - Overwatch & Pokemon Violet pages
+   Student ID: S25080Q  Name: Gen */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0e0e1a;
+  color: #f0f0f0;
+}
+
+/* --- Header --- */
+header {
+  text-align: center;
+  padding: 20px;
+  font-size: 40px;
+  font-weight: bold;
+  background-color: #1a1a2e;
+  border-bottom: 3px solid #f99e1a;
+}
+
+/* Overwatch: orange/blue theme */
+.ow-theme header {
+  color: #f99e1a;
+  border-color: #f99e1a;
+}
+
+/* Pokemon Violet: purple theme */
+.pk-theme header {
+  color: #c084fc;
+  border-color: #c084fc;
+}
+
+/* --- Navigation --- */
+nav.top-nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background-color: #12122a;
+  padding: 10px;
+}
+
+nav.top-nav a {
+  color: #f0f0f0;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 6px 14px;
+  border: 1px solid #555;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+nav.top-nav a:hover {
+  background-color: #333360;
+}
+
+/* --- Card grid --- */
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px 20px;
+}
+
+.card {
+  background-color: #1c1c3a;
+  border: 2px solid #444;
+  border-radius: 10px;
+  width: 200px;
+  text-align: center;
+  padding: 15px;
+  cursor: pointer;
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.ow-theme .card:hover { border-color: #f99e1a; }
+.pk-theme .card:hover { border-color: #c084fc; }
+
+.card img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  border-radius: 6px;
+}
+
+.card h3 {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.card p {
+  font-size: 13px;
+  color: #aaa;
+  margin-top: 5px;
+}
+
+/* --- Detail box (hidden until a card is clicked) --- */
+#detail-box {
+  background-color: #1a1a40;
+  border: 2px solid #555;
+  border-radius: 10px;
+  max-width: 700px;
+  margin: 0 auto 30px auto;
+  padding: 25px;
+  display: none;
+}
+
+#detail-box.visible {
+  display: block;
+}
+
+#detail-box h2 {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.ow-theme #detail-box h2 { color: #f99e1a; }
+.pk-theme #detail-box h2 { color: #c084fc; }
+
+#detail-box p {
+  color: #ccc;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+#detail-box img {
+  float: right;
+  width: 160px;
+  margin: 0 0 10px 15px;
+  border-radius: 8px;
+  object-fit: contain;
+}
+
+/* --- Game intro section --- */
+.intro-section {
+  max-width: 750px;
+  margin: 30px auto;
+  padding: 0 20px;
+  line-height: 1.7;
+  color: #ccc;
+  font-size: 15px;
+}
+
+.intro-section h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.ow-theme .intro-section h2 { color: #f99e1a; }
+.pk-theme .intro-section h2 { color: #c084fc; }
+
+.intro-section img.banner {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+/* --- Type calculator link button --- */
+.calc-btn {
+  display: block;
+  width: fit-content;
+  margin: 15px auto;
+  padding: 12px 28px;
+  background-color: #7c3aed;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.calc-btn:hover {
+  background-color: #9f5df0;
+}
+
+/* --- Footer --- */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #888;
+  font-size: 13px;
+  border-top: 1px solid #333;
+  margin-top: 30px;
+}

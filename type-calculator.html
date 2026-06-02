@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!-- type-calculator.html - Pokemon Type Effectiveness Calculator
+     Student ID: S25080Q  Name: Gen
+     Type chart data: https://www.pokemon.com -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pokemon Type Effectiveness Calculator">
+  <title>Type Calculator — Pokémon Violet</title>
+  <link rel="stylesheet" href="games.css">
+  <style>
+    #calc-container {
+      max-width: 600px;
+      margin: 30px auto;
+      padding: 30px;
+      background-color: #1a1a40;
+      border: 2px solid #7c3aed;
+      border-radius: 12px;
+      text-align: center;
+    }
+    #calc-container h2 {
+      color: #c084fc;
+      margin-bottom: 20px;
+      font-size: 22px;
+    }
+    #type-select {
+      padding: 10px 16px;
+      font-size: 16px;
+      border-radius: 8px;
+      border: 2px solid #7c3aed;
+      background-color: #12122a;
+      color: #f0f0f0;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+    #calc-btn {
+      padding: 10px 24px;
+      font-size: 16px;
+      background-color: #7c3aed;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+    #calc-btn:hover { background-color: #9f5df0; }
+    #result-box {
+      display: none;
+      margin-top: 24px;
+      text-align: left;
+      padding: 16px;
+      background-color: #0e0e1a;
+      border-radius: 8px;
+      border: 1px solid #444;
+    }
+    .hint {
+      color: #888;
+      font-size: 13px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+
+<body class="pk-theme">
+
+  <header>TYPE CALCULATOR</header>
+
+  <nav class="top-nav">
+    <a href="index.html">&#127968; Home</a>
+    <a href="pokemon.html">&#8592; Back to Pokémon Violet</a>
+    <a href="WebProgram_Finale/SFEncyclopedia.html">Street Fighter II</a>
+    <a href="overwatch.html">Overwatch</a>
+  </nav>
+
+  <div id="calc-container">
+    <h2>&#9876;&#65039; Type Effectiveness Calculator</h2>
+    <p style="color:#aaa;margin-bottom:20px;font-size:14px;">
+      Select an attacking type to see what it hits super effectively,
+      not very effectively, or not at all.
+    </p>
+    <select id="type-select">
+      <option value="">-- Select Attacking Type --</option>
+    </select>
+    <button id="calc-btn">Calculate</button>
+    <p class="hint">Based on Generation IX (Scarlet / Violet) type chart</p>
+    <div id="result-box"></div>
+  </div>
+
+  <footer>Type chart: pokemon.com | S25080Q  Gen</footer>
+
+  <script src="calculator.js"></script>
+
+</body>
+</html>
